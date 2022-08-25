@@ -1,12 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-struct node
+struct Node
 {
   int data;
   Node *left;
   Node *right;
-}
+};
 
 Node* newNode(int val)
 {
@@ -41,7 +41,7 @@ int main()
 {
    string s;
    getline(cin,s);
-   if(str.legth()==0||str[0]==N) return NULL;
+   if(s.length()==0||s[0]=='N') return NULL;
    Node* root = buildTree(s);
    inorder(root);
    return 0;
